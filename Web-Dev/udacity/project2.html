@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My To-Do List</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			padding: 20px;
+		}
+		#to-do-list {
+			width: 400px;
+			background: #2e3d49;
+			padding: 20px;
+			border-radius: 8px;
+			margin: 0 auto;
+		}
+		h1 {
+			color: #fff;
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		h2 {
+			color: #fff;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.list {
+			list-style-type: circle;
+			text-align: left;
+			font-size: 16px;
+			color: #1fba58;
+			line-height: 24px;
+			padding-left: 20px;
+		}
+		.list .finished {
+			color: #f4442f;
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<div id="to-do-list">
+		<h1>My To-Do List</h1>
+		<h2>Chores</h2>
+		<ul class="list">
+			<li>load the dishwasher</li>
+			<li>vacuum living room</li>
+			<li>take out garbage</li>
+			<li class="finished">sweep the garage</li>
+		</ul>
+		<h2>Homework</h2>
+		<ul class="list">
+			<li class="finished">brainstorm ideas for Science project</li>
+			<li class="finished">finish Calculus 2 problems</li>
+			<li>study for Programming midterm :P</li>
+			<li>finish Project 0 on Udacity FEND</li>
+			<li class="finished">find sources for Biology research paper</li>
+			<li>read first two chapters of The Art of War</li>
+		</ul>
+		<h2>Party</h2>
+		<ul class="list">
+			<li class="finished">send out invitations</li>
+			<li>reserve party room at restaurant</li>
+			<li>order the cake!</li>
+		</ul>
+	</div>
+</body>
+</html>
