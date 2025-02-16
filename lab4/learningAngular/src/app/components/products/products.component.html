@@ -1,0 +1,19 @@
+<div class="products-container">
+    <div class="product-card" *ngFor="let product of products">
+      <div class="image-gallery">
+        <img [src]="product.images[0]" [alt]="product.name" class="main-image">
+        <div class="thumbnail-gallery">
+          <img *ngFor="let img of product.images" [src]="img" [alt]="product.name" class="thumbnail">
+        </div>
+      </div>
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p class="rating">⭐ {{ product.rating }}/5</p>
+      <a [href]="product.kaspiUrl" target="_blank" class="buy-button">Buy on Kaspi</a>
+      <div class="share-buttons">
+        <button (click)="shareOnWhatsApp(product.kaspiUrl)">Share on WhatsApp</button>
+        <button (click)="shareOnTelegram(product.kaspiUrl)">Share on Telegram</button>
+      </div>
+    </div>
+  </div>
+  
